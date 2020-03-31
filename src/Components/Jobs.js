@@ -59,11 +59,11 @@ export default function Job(props) {
      {jobs.map(function(item, i){
        console.log(item,'index i',i);
   return <div className="data">
-  <li key={i}>{item && item.id}</li>
-  <li key={i}>{item && item.item}</li>
-  <li key={i}>{item && item.isPublished}</li>
-  <li key={i}>{item && item.description}</li>
-  <li key={i}>{item && item.company.name}</li>
+  <li key={item.id}>{item && item.id}</li>
+  <li key={item.id}>{item && item.item}</li>
+  <li key={item.id}>{item && item.isPublished}</li>
+  <li key={item.id}>{item && item.description}</li>
+  <li key={item.id}>{item && item.company.name}</li>
   </div>
 })}
    </div>
