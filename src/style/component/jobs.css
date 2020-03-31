@@ -1,0 +1,15 @@
+.form{
+    flex-grow: 1;
+    background:darkblue;
+    border: none;
+    border-bottom: .3rem solid darken(purple,10%);
+    margin-right: 1.2rem;
+    color: whitesmoke;
+    margin: 0 0 1.2rem 0;
+    padding: 1.2rem;
+    align-content: center;
+}
+.data{
+    background-color: darkkhaki;
+    margin : 1rem;
+}
