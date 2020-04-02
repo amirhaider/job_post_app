@@ -1,5 +1,5 @@
 .main_container{
-    border: black solid 1rem ;
+    border: purple solid .5rem ;
 }
 .form{
     flex-grow: 1;
@@ -7,10 +7,10 @@
     border: none;
     border-bottom: .3rem solid ;
     border-color: darkslategrey;
-    margin: 0 0 1.2rem 0;
+    margin: 3rem;
     padding: 1.2rem;
     align-content: center;
-    width: 96%;
+    width: 90%;
     text-align: center;
     text-decoration-style:solid;
      
@@ -18,12 +18,18 @@
 }
 .data{
     background-color: whitesmoke;
-    margin: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-weight: bold;
+    font-style: initial;
+    
+    border: .5rem solid gray;
    
 }
 .main_data_div{
     background-color:white;
-    margin: 3rem;
+    
+    
 
 }
 .main_div{
@@ -61,8 +67,8 @@
     border-bottom: .3rem solid darken(purple, 10%);
     color: white;
     font-weight: 500;
-    padding: 1.5rem;
-    margin: 1rem;
+    padding: .5rem;
+    margin: .5rem;
     width: 10%;
     cursor: pointer;
 
@@ -73,13 +79,13 @@
     border-bottom: .3rem solid darken(purple, 10%);
     color: white;
     font-weight: 500;
-    padding: 1.5rem;
-    margin: 1rem;
+    padding: .5rem;
+    margin: .5rem;
     width: 10%;
     cursor: pointer;
 }
 .company_name{
-    color: red;
+    color:black;
 }
 
 
@@ -100,4 +106,7 @@
         z-index: 9999;
         background: url(http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
     
+}
+.data_header{
+    background-color: gray;
 }

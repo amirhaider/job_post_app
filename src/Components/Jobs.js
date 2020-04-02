@@ -55,7 +55,7 @@ export default function Job(props) {
       </div>
     );
   return (
-   <div>
+   <div className="main_data_div"> 
     <input
             
             type="text"
@@ -68,8 +68,9 @@ export default function Job(props) {
      {filter.map(function(item, i){
        console.log(item,i);
   return <div className="main_div">
-  <div className="main_data_div">
+  <div className="">
   <div className="data">
+  <div className="data_header">
   <input
                         type="checkbox"
                         className="custom_checkbox"
@@ -110,6 +111,7 @@ export default function Job(props) {
                         </button>
                       )}
                     </p>
+                    </div>
                       <p className="description">{item.description}</p>
                       {item.userEmail && (
                       <p className="">
