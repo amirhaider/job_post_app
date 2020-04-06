@@ -1,21 +1,29 @@
 .main_container{
     border: purple solid .5rem ;
+    padding: 0%;
+    margin: 0%;
 }
-.form{
+.input{
     flex-grow: 1;
-    
-    border: none;
-    border-bottom: .3rem solid ;
-    border-color: darkslategrey;
-    margin: 3rem;
-    padding: 1.2rem;
-    align-content: center;
-    width: 90%;
+    background:whitesmoke;
+    border-style: ridge;
+    color:black;
+    cursor: text;
+    padding: 15px 22px;
+    margin: 10px 5px;
+    box-sizing: content-box; 
+    border: 4px solid #8842d5;
+    border-radius: 5px; 
     text-align: center;
-    text-decoration-style:solid;
-     
+    display: flex;
+    width: 85%;
+    margin: 0 10rem 2rem 3rem;
+   
+  }
     
-}
+   
+
+
 .data{
     background-color: whitesmoke;
     margin-left: 3rem;
@@ -28,6 +36,8 @@
 }
 .main_data_div{
     background-color:white;
+    padding: 0%;
+    margin: 0%;
     
     
 
@@ -59,17 +69,17 @@
 
 }
 .title{
-
 }
+
 .apply{
     background-color: purple;
     border: none;
     border-bottom: .3rem solid darken(purple, 10%);
     color: white;
-    font-weight: 500;
+   
     padding: .5rem;
-    margin: .5rem;
-    width: 10%;
+    
+    
     cursor: pointer;
 
 }
@@ -81,7 +91,7 @@
     font-weight: 500;
     padding: .5rem;
     margin: .5rem;
-    width: 10%;
+    
     cursor: pointer;
 }
 .company_name{
@@ -109,4 +119,16 @@
 }
 .data_header{
     background-color: gray;
+}
+@media(max-width:45rem){
+    .data{
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+    .input{
+        margin: 0 5px 1rem 2px;
+        width: 83%;
+
+    }
+    
 }

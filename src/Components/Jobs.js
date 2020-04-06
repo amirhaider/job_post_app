@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { gql } from "apollo-boost";
+import { NavLink} from 'react-router-dom';
 import "../style/base/base.css";
 import "../style/component/jobs.css";
 
@@ -27,6 +28,9 @@ const JOBS = gql`
 `;
 
 export default function Job(props) {
+  const View=()=>{
+       console.log("view working") ;
+  };
   
   let [jobs, setJobs] = useState([]);
   let [filter, setfilter] = useState([]);
@@ -59,14 +63,13 @@ export default function Job(props) {
     <input
             
             type="text"
-            className="form"
+            className="input"
             placeholder="Enter Job or Company for serch"
             onChange={onChange}
           />
           
      
-     {filter.map(function(item, i){
-       console.log(item,i);
+     {filter.map(function(item){
   return <div className="main_div">
   <div className="">
   <div className="data">
@@ -74,19 +77,14 @@ export default function Job(props) {
   <input
                         type="checkbox"
                         className="custom_checkbox"
-                        id={item.id}
                         checked={item.isPublished}
-                      />
-                      <label
-                        class="label"
-                        for={item.id}
-                        title="Published"
                         
-                      ></label>
+                      />
+                     
                       {item.company && (
                         <a
                           href={`/jobs/${item.slug}/${item.company.slug}`}
-                          class="title"
+                          className="title"
                         >
                           {item.title}
                         </a>
@@ -94,16 +92,17 @@ export default function Job(props) {
                       )}
                       <small>at </small>{" "}
                       <b className="company_name">{item.company.name}</b>
-                      <p class="apply_view">
+                      <p className="apply_view">
                       <button
-                        onClick={item.applyUrl}
+                        
                         className="apply"
                       >
                         Apply
                       </button>
                       {item.company && (
                         <button
-                          onClick={`/jobs/${item.slug}/${item.company.slug}`}
+                          onClick={View}
+       
                           className="view_details"
                           
                         >
