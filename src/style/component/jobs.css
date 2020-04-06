@@ -78,6 +78,8 @@
     color: white;
    
     padding: .5rem;
+    margin-left: 10rem;
+    
     
     
     cursor: pointer;
@@ -88,9 +90,10 @@
     border: none;
     border-bottom: .3rem solid darken(purple, 10%);
     color: white;
-    font-weight: 500;
+    
     padding: .5rem;
     margin: .5rem;
+    margin-left: 2rem;
     
     cursor: pointer;
 }
@@ -129,6 +132,14 @@
         margin: 0 5px 1rem 2px;
         width: 83%;
 
+    }
+    .view_details{
+        margin-top: 2rem;
+
+    }
+    .apply{
+        margin-left: 5rem;
+        margin-top: 2rem;
     }
     
 }

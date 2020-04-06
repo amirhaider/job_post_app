@@ -28,9 +28,9 @@ const JOBS = gql`
 `;
 
 export default function Job(props) {
-  const View=()=>{
-       console.log("view working") ;
-  };
+ 
+ 
+ 
   
   let [jobs, setJobs] = useState([]);
   let [filter, setfilter] = useState([]);
@@ -69,7 +69,8 @@ export default function Job(props) {
           />
           
      
-     {filter.map(function(item){
+     {filter.map((item)=>{
+       
   return <div className="main_div">
   <div className="">
   <div className="data">
@@ -92,24 +93,22 @@ export default function Job(props) {
                       )}
                       <small>at </small>{" "}
                       <b className="company_name">{item.company.name}</b>
-                      <p className="apply_view">
+                      
                       <button
-                        
+                        onClick={()=>console.log("apply called")}
                         className="apply"
                       >
                         Apply
                       </button>
                       {item.company && (
-                        <button
-                          onClick={View}
-       
+                        <a
+                          href={`/jobs/${item.slug}/${item.company.slug}`}
                           className="view_details"
-                          
                         >
-                          Details
-                        </button>
+                          View Details
+                        </a>
                       )}
-                    </p>
+                    
                     </div>
                       <p className="description">{item.description}</p>
                       {item.userEmail && (
@@ -125,4 +124,5 @@ export default function Job(props) {
    </div>
   
   );
-}
+ }
+
